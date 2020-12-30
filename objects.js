@@ -10,5 +10,5 @@ var playlist = new Object({ sinatra: my way });
 // object. The function should return the whole playlist.
 
 function updatePlaylist(playlist, artistName, songTitle) {
-  return new Object({}, { artistName: songTitle });
+  return playlist[artistName] = songTitle;
 }
